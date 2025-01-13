@@ -182,16 +182,17 @@ const EditableSelectField = (props) => {
         ),
         default: (
           <div className="form-group">
-            <div className="d-flex align-items-start">
-              <h6 aria-level="3">{label}</h6>
+            <div className="d-flex align-items-start justify-content-between">
+              <h5 aria-level="3">{label}</h5>
               {isEditable ? (
                 <Button variant="link" onClick={handleEdit} className="ml-3">
                   <FontAwesomeIcon className="mr-1" icon={faPencilAlt} />{intl.formatMessage(messages['account.settings.editable.field.action.edit'])}
                 </Button>
               ) : null}
             </div>
-            <p data-hj-suppress className={isGrayedOut ? 'grayed-out' : null}>{renderValue(value)}</p>
             <p className="small text-muted mt-n2">{renderConfirmationMessage() || helpText}</p>
+
+            <p data-hj-suppress className={isGrayedOut ? 'grayed-out' : null}>{renderValue(value)}</p>
           </div>
         ),
       }}

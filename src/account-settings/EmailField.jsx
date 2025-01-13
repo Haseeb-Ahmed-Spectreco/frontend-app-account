@@ -65,9 +65,9 @@ const EmailField = (props) => {
         className="alert-warning mt-n2"
         icon={<FontAwesomeIcon className="mr-2 h6" icon={faExclamationTriangle} />}
       >
-        <h6 aria-level="3">
+        <h5 aria-level="3">
           {intl.formatMessage(messages['account.settings.email.field.confirmation.header'])}
-        </h6>
+        </h5>
         {intl.formatMessage(confirmationMessageDefinition, { value: confirmationValue })}
       </Alert>
     );
@@ -153,8 +153,8 @@ const EmailField = (props) => {
         ),
         default: (
           <div className="form-group">
-            <div className="d-flex align-items-start">
-              <h6 aria-level="3">{label}</h6>
+            <div className="d-flex align-items-start justify-content-between">
+              <h5 aria-level="3">{label}</h5>
               {isEditable ? (
                 <Button variant="link" onClick={handleEdit} className="ml-3">
                   <FontAwesomeIcon className="mr-1" icon={faPencilAlt} />
@@ -162,8 +162,8 @@ const EmailField = (props) => {
                 </Button>
               ) : null}
             </div>
-            <p data-hj-suppress>{renderValue()}</p>
             {renderConfirmationMessage() || <p className="small text-muted mt-n2">{helpText}</p>}
+            <p data-hj-suppress>{renderValue()}</p>
           </div>
         ),
       }}

@@ -16,14 +16,60 @@ $fa-font-path: "~font-awesome/fonts";
 }
 
 // TODO: Update edx-bootstrap theme to incorporate these edits.
-.btn, a.btn {
+a.btn {
   text-decoration: none;
+  color: $primary;
   &:hover {
-    text-decoration: none;
+    text-decoration: underline;
+    color: #4c0b0f
   }
 }
+
+.account-section{
+  border: 1px solid #bc1823;
+  padding: 20px;
+  border-radius: 10px;
+  
+  h2{
+    font-size: larger;
+  }
+  h5{
+    font-size: large;
+  }
+  h6{
+    font-size: large;
+  }
+  .form-group{
+    border: 1px solid #bc1823;
+    border-radius: 5px;
+    max-width: 85%;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a light shadow */
+
+    p{
+      font-size: larger;
+      margin-bottom: 0px;
+      color: #bc1823;
+    }
+    .text-muted{
+      margin-bottom: 0px;
+      font-size: medium;
+    }
+    .text-truncate{
+      font-size: larger;
+      margin-bottom: 0px;
+    }
+  }
+  
+  
+}
+
+.font-weight-bold{
+  font-weight: 700 !important;
+}
+
 .btn-link {
-  text-decoration: underline;
+  text-decoration: none;
   &:hover {
     text-decoration: underline;
   }
@@ -37,6 +83,8 @@ $fa-font-path: "~font-awesome/fonts";
     flex-grow: 1;
   }
 }
+
+
 
 .checkboxOption {
   input:focus {

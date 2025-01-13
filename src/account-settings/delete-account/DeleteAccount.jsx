@@ -99,7 +99,7 @@ export class DeleteAccount extends React.Component {
           )}
         </p>
         <p>
-          <Hyperlink destination="https://help.edx.org/edxlearner/s/topic/0TOQq0000001UdZOAU/account-basics">
+          <Hyperlink  destination="https://help.edx.org/edxlearner/s/topic/0TOQq0000001UdZOAU/account-basics">
             {intl.formatMessage(messages['account.settings.delete.account.text.change.instead'])}
           </Hyperlink>
         </p>
